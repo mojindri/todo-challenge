@@ -60,7 +60,7 @@ class App extends Component {
                         <Header/>
                         <Route exact path="/" render={props => (
                             <React.Fragment>
-                                <AddTodo addTodo={this.toDoADD()}/>
+                                <AddTodo addTodo={this.toDoADD}/>
                                 <Todos todos={this.state.todos} markComplete={this.markComplete}
                                        delTodo={this.toDoDELETE}/>
                                 <Summary/>
